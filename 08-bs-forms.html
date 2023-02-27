@@ -9,10 +9,10 @@
             console.log(currentMode);
             if (currentMode === 'dark') {
                 document.getElementById('colorMode').setAttribute('data-bs-theme', 'light');
-                document.getElementById('modeIcon').setAttribute('class', 'bi-sun-fill');
+                document.getElementById('modeIcon').setAttribute('class', 'bi bi-sun-fill');
             } else {
                 document.getElementById('colorMode').setAttribute('data-bs-theme', 'dark');
-                document.getElementById('modeIcon').setAttribute('class', 'bi-moon-fill');
+                document.getElementById('modeIcon').setAttribute('class', 'light bi bi-moon-fill');
             }
         };
     </script>
@@ -31,9 +31,12 @@
             <div class="col-5">
                 <p class="lead">Bootstrap is a CSS framework.</p>
             </div>
-            <div class="col-5 justify-content-right">
-                <button class="btn border" onclick="changeColorMode()" value="ChangeMode">
-                    <i id="modeIcon" class="bi-sun-fill"></i>
+            <div class="col-5">
+            </div>
+            <div class="col-1">
+                <button class="btn btn-outline-secondary" onclick="changeColorMode()" value="ChangeMode">
+                    <i id="modeIcon" class="bi bi-sun-fill"></i>
+                </button>
             </div>
         </div>
     </div>
