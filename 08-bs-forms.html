@@ -1,7 +1,21 @@
 <!DOCTYPE html>
-<html data-bs-theme="dark">
+<html id="colorMode" data-bs-theme="dark">
 
 <head>
+
+    <script>
+        const changeColorMode = () => {
+            let currentMode = document.getElementById('colorMode').getAttribute('data-bs-theme');
+            console.log(currentMode);
+            if (currentMode === 'dark')
+                document.getElementById('colorMode').setAttribute('data-bs-theme', 'light');
+            else
+                document.getElementById('colorMode').setAttribute('data-bs-theme', 'dark');
+
+        }
+    </script>
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -11,6 +25,10 @@
     <div class="container">
         <p class="display-1 text-primary mt-3 pt-3">Bootstrap Forms</p>
         <p class="lead">Bootstrap is a CSS framework.</p>
+        <div class=" px-3 py-3">
+            <input type="button" class="btn border" onclick="changeColorMode()" value="ChangeMode">
+        </div>
+
         <hr />
         <div class="row pt-3 pb-3 mt-3 mb-3 justify-content-center">
             <div class="col-5 border rounded shadow mx-3 my-3 px-3 py-3">
