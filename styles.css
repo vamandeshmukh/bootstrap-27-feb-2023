@@ -1,3 +1,9 @@
 .my-style-2 {
     color: brown;
 }
+
+.my-style-3 {
+    color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
