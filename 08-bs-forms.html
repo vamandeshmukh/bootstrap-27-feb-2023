@@ -23,7 +23,8 @@
                         <input class="form-control mt-3 pt-3" type="email" value="" placeholder="Please enter email">
                         <input class="form-control mt-3 pt-3" type="password" value=""
                             placeholder="Please enter password">
-                        <input class="form-control  mt-3 pt-3 btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" value="Login">
+                        <input class="form-control  mt-3 pt-3 btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#loginModal" type="button" value="Login">
                     </form>
                 </div>
             </div>
@@ -33,20 +34,19 @@
         <div>
 
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="loginModal" tabindex="-1">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Login Response</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            You have successfully logged in!
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
                         </div>
                     </div>
                 </div>
