@@ -3,13 +3,31 @@
 
 <head>
 
+    <!-- 2. Internal CSS : using style element in the same document   -->
+    <style>
+        .my-style {
+            color: blueviolet;
+        }
+    </style>
+
+    <!-- 3. External CSS : using separate CSS file  -->
+    <link rel="stylesheet" href="./styles.css">
+
+
 </head>
 
 <body>
 
-    <p>Some text </p>
-    <p>Some more text </p>
-    <p>Tey some more text</p>
+    <!-- 1. Inline CSS : using style attribute -->
+    <p style="color: blue;">Some text </p>
+
+    <!-- 2. Internal CSS : using style element in the same document   -->
+    <p class="my-style">Some more text </p>
+    <p class="my-style">Some more text </p>
+    <p class="my-style">Some more text </p>
+
+    <!-- 3. External CSS : using separate CSS file  -->
+    <p class="my-style-2">Yet some more text</p>
 
 </body>
 
